@@ -135,7 +135,7 @@ fun logKillsByGame() {
                     modKills[mod.toInt()] = 1
                 }
             }
-            it.contains(ENDGAME) || it.contains(INITGAME) -> {
+            it.contains(ENDGAME) -> {
                 userListStats.getUserList().forEach {
                     println("Player ${it.ind} ${it.name} - " +
                             "Kills: ${it.kills}/ " +
